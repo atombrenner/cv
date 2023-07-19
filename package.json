@@ -5,21 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently 'npx tailwindcss -i ./main.css -o ./build/main.css --watch' 'ts-node-dev --respawn -T index.tsx'"
+    "start": "bun --watch index.tsx"
   },
   "author": "Christian Rodemeyer",
   "license": "ISC",
   "dependencies": {
+    "execa": "^7.1.1",
     "preact": "^10.15.1",
     "preact-render-to-string": "^6.1.0"
   },
   "devDependencies": {
-    "@tsconfig/node20": "^1.0.1",
-    "concurrently": "^8.2.0",
     "prettier": "^3.0.0",
     "tailwindcss": "^3.3.2",
-    "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.3"
   }
 }

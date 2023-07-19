@@ -2,6 +2,7 @@ import render from 'preact-render-to-string'
 import { writeFileSync } from 'fs'
 import { NameAndTitle, Photo } from './header'
 import { VNode } from 'preact'
+import { $ } from 'execa'
 
 const CV = () => (
   <html>
@@ -40,4 +41,10 @@ const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNo
   </div>
 )
 
-writeFileSync('build/index.html', render(<CV />))
+const tailwind = $`npx tailwindcss -i ./main.css -o ./build/main.css`
+const html = render(<CV />)
+const { stdout, stderr } = await tailwind
+writeFileSync('build/index.html', html)
+
+console.log(stdout)
+console.log(stderr)

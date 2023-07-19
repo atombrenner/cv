@@ -1,13 +1,24 @@
 {
-  "extends": "@tsconfig/node20",
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
-    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
-    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     "noEmit": true,
-
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+
+    // bun defaults
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["ES2023"],
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "bun-types" // add Bun global
+    ]
   }
 }
