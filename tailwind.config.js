@@ -5,7 +5,11 @@ module.exports = {
     fontFamily: {
       sans: ['Noto Sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      screens: {
+        print: { raw: 'print' },
+      },
+    },
   },
   plugins: [],
 }

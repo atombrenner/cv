@@ -12,12 +12,12 @@ const CV = () => (
       <link href="./main.css" rel="stylesheet"></link>
     </head>
     <body class="font-sans">
-      <div class="container mx-auto w-[1100px]">
+      <div class="container mx-auto mt-10 print:mt-4 w-[1100px]">
         <TwoColumns class="bg-[#fed78c]">
           <Photo />
           <BusinessCard />
         </TwoColumns>
-        <TwoColumns>
+        <TwoColumns class="mt-10">
           <Skills />
           <div>
             <p>Profile</p>
@@ -31,7 +31,7 @@ const CV = () => (
 )
 
 const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNode, VNode] }) => (
-  <div class={`flex mt-10 ${extra ?? ''}`}>
+  <div class={`flex ${extra ?? ''}`}>
     <div class="w-1/3 pr-16">{children[0]}</div>
     <div class="w-2/3">{children[1]}</div>
   </div>
