@@ -4,6 +4,8 @@ import { BusinessCard, Photo } from './header'
 import { VNode } from 'preact'
 import { $ } from 'execa'
 import { Skills } from './skills'
+import { Employments } from './employments'
+import { Profile } from './profile'
 
 const CV = () => (
   <html>
@@ -20,9 +22,8 @@ const CV = () => (
         <TwoColumns class="mt-10">
           <Skills />
           <div>
-            <p>Profile</p>
-            {/* <Profile />
-            <Employments /> */}
+            <Profile />
+            <Employments />
           </div>
         </TwoColumns>
       </div>
