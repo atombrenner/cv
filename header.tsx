@@ -5,8 +5,8 @@ export const BusinessCard = () => (
     <h2 class="text-2xl mt-4">Software Engineer | Tech Lead | Architect</h2>
     <p class="mt-10">Angerweg 26, 85579 Neubiberg</p>
     <p>
-      <a href="tel:+4915170178984" class="hover:underline">
-        +49 151 70178984
+      <a href={`tel:+49151${35 * 2}70178984`} class="hover:underline">
+        +4{3 * 3} 151 {35178984 + 35000000}
       </a>
     </p>
     <p>
