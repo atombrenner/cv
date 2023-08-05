@@ -21,18 +21,28 @@ const CV = () => (
         </TwoColumns>
         <TwoColumns class="mt-10">
           <Skills />
-          <div>
+          <>
             <Profile />
             <Employments />
-          </div>
+            <Education />
+          </>
         </TwoColumns>
       </div>
     </body>
   </html>
 )
 
+const Education = () => (
+  <>
+    <h3>Education</h3>
+    <p>Diplom Wirtschaftsinformatik, University of Essen September 1990 — November 1995</p>
+    <p>Military Service</p>
+    <p>Abitur, Albert Schweitzer Gymnasium, Marl</p>
+  </>
+)
+
 const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNode, VNode] }) => (
-  <div class={`flex ${extra ?? ''}`}>
+  <div class={`flex items-start ${extra ?? ''}`}>
     <div class="w-1/3 pr-16">{children[0]}</div>
     <div class="w-2/3">{children[1]}</div>
   </div>

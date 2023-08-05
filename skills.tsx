@@ -1,18 +1,18 @@
 import { ComponentChildren, VNode } from 'preact'
 
 export const Skills = () => (
-  <div>
-    <h3 class="text-xl font-bold mb-2">Skills</h3>
-    <p>
+  <>
+    {/* <p class="mb-6">
       🔗
-      <a href="https://github.com/atombrenner" class="underline text-blue-700 ml-1">
+      <a href="https://github.com/atombrenner" class="underline text-blue-700  ml-1">
         github.com/atombrenner
       </a>
-    </p>
+    </p> */}
+    <h3 class="text-lg font-bold mb-2">Skills</h3>
     <Skill name="Languages">
       German: native
       <br />
-      English: fluent (C1)
+      English: fluent
     </Skill>
     <Skill name="Developer Experience" />
     deployment pipelines ergonomic features observability log analytics Agile Principles
@@ -33,7 +33,7 @@ export const Skills = () => (
       Gregor Hohpe, Eric Evans, Adrian&nbsp;Cockroft, Martin Fowler, Stefan&nbsp;Tilkov,
       Bjarne&nbsp;Stroustroup, Tom DeMarco
     </Skill>
-  </div>
+  </>
 )
 
 type SkillProps = {
