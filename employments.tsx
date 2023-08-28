@@ -24,7 +24,7 @@ export const Employments = () => (
         <li>bla</li>
       </Employment>
       <Employment
-        title="Team Lead & SW Architect"
+        title="Team Lead & Software Architect"
         company="Autoscout24"
         location="Munich"
         fromTo="2010-2015"
@@ -35,7 +35,7 @@ export const Employments = () => (
         title="Software Architect"
         company="DAVID Systems GmbH"
         location="Munich"
-        fromTo="2007 — 2010"
+        fromTo="2007-2010"
       >
         <li>bla</li>
       </Employment>

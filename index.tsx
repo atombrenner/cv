@@ -6,6 +6,7 @@ import { $ } from 'execa'
 import { Skills } from './skills'
 import { Employments } from './employments'
 import { Profile } from './profile'
+import { Education } from './education'
 
 const CV = () => (
   <html>
@@ -30,15 +31,6 @@ const CV = () => (
       </div>
     </body>
   </html>
-)
-
-const Education = () => (
-  <>
-    <h3>Education</h3>
-    <p>Diplom Wirtschaftsinformatik, University of Essen September 1990 — November 1995</p>
-    <p>Military Service</p>
-    <p>Abitur, Albert Schweitzer Gymnasium, Marl</p>
-  </>
 )
 
 const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNode, VNode] }) => (
