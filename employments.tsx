@@ -10,7 +10,13 @@ export const Employments = () => (
         location="Munich"
         fromTo="2021-Present"
       >
-        <li>providing technical expertise and leadership </li>
+        <li>providing technical expertise and leadership for junior developers</li>
+        <li>
+          designed and implemented several B2B and B2C web apps, that enabled business to quickly
+          evaluate ideas and find customers
+        </li>
+        <li>ensuring GDPR compliance and keeping PII data safe</li>
+        <li>responsible for AWS infrastructure</li>
       </Employment>
       <Employment
         title="Software & Infrastructure Developer"
@@ -18,7 +24,22 @@ export const Employments = () => (
         location="Munich"
         fromTo="2017-2021"
       >
-        <li>bla</li>
+        <li>
+          for re-architected article page rendering, improving developer productivity and time to
+          market while minimizing operational costs (AWS, Lambda, SSR React)
+        </li>
+        <li>improved page speed and seo metrics without sacrificing tracking and advertisement</li>
+        <li>
+          transformed generic dev team into a frontend focused team, responsible for the home page
+          and article pages
+        </li>
+        <li>supported several teams with AWS, Typescript, React and NodeJS knowledge</li>
+        <li>used tracking data to generate article recommendations</li>
+        <li>
+          replaced legacy custom image storage with standard AWS S3 and Cloudfront increasing
+          availability and reducing costs by orders of magnitude
+        </li>
+        <li>switched website (including dozens of legacy services) from http to https</li>
       </Employment>
       <Employment title="Cloud Developer" company="tado° GmbH" location="Munich" fromTo="2016-2017">
         <li>automated AWS infrastructure with CloudFormation and Ruby</li>
@@ -47,13 +68,15 @@ export const Employments = () => (
           costs
         </li>
         <li>
-          pushed Continuous Delivery practices, enabling deployments in minutes instead of multiple
-          hours, which made hotfix releases obsolete
+          pushed Continuous Delivery practices to deploy code changes automatically, reducing time
+          to fix from weeks to hours and making hotfix release process obsolete
         </li>
+        <li>implemented build and deploy pipelines that run in minutes instead of hours</li>
         <li>
           implemented a custom frontend build pipeline (minifier, bundler and strong caching/CDN)
           for better pagespeed and cost reduction
         </li>
+        <li>enabled zero downtime code only deployments</li>
         <li>migrated the monolithic .NET platform from .NET2 to .NET4</li>
         <li>
           made production logs performant and accessible for developers to quickly detect and fix
