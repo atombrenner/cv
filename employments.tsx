@@ -13,7 +13,7 @@ export const Employments = () => (
         <li>providing technical expertise and leadership for junior developers</li>
         <li>
           designed and implemented several B2B and B2C web apps, that enabled business to quickly
-          evaluate ideas and find customers
+          show and evaluate new ideas
         </li>
         <li>ensuring GDPR compliance and keeping PII data safe</li>
         <li>responsible for AWS infrastructure</li>
@@ -153,7 +153,7 @@ type EmploymentProps = {
 }
 
 const Employment = ({ title, company, location, fromTo, children }: EmploymentProps) => (
-  <li>
+  <li class="break-inside-avoid">
     <h3 class="text-lg font-bold mt-4">
       {title}, {company}
     </h3>
