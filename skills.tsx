@@ -14,8 +14,9 @@ export const Skills = () => (
       <br />
       English: fluent
     </Skill>
-    <Skill name="AWS Cloud Native Web Apps">serverless whenever possible</Skill>
-    <p class="font-bold mt-4">Domain Driven Design</p>
+    <Skill name="AWS Cloud Native Apps">serverless whenever possible</Skill>
+    <Skill name="Domain Driven Design"></Skill>
+    <Skill name="Data Analysis">Observability, data first, metrics</Skill>
     {/* Technologies */}
     <Skill name="Programming Languages">
       Typescript, Rust, C++, C#,
@@ -29,7 +30,7 @@ export const Skills = () => (
     </Skill>
     <Skill name="Platforms">Web, AWS, Linux, Windows</Skill>
     <Skill name="Developer Experience" />
-    Build & Deployment pipelines, Tooling, DevOps
+    Continuous Delivery, Build & Deployment pipelines, Tooling, DevOps
     <Skill name="Fan of">
       Gregor Hohpe, Eric Evans, Adrian&nbsp;Cockroft, Martin Fowler, Stefan&nbsp;Tilkov,
       Bjarne&nbsp;Stroustroup, Tom DeMarco, Christian Deger

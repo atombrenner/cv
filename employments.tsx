@@ -10,13 +10,16 @@ export const Employments = () => (
         location="Munich"
         fromTo="2021-Present"
       >
-        <li>providing technical expertise and leadership for junior developers</li>
         <li>
-          designed and implemented several B2B and B2C web apps, that enabled business to quickly
-          show and evaluate new ideas
+          coached and developed a team of junior developers that designed and implemented several
+          B2B and B2C web apps to quickly demo and evaluate new ideas with potential customers
         </li>
-        <li>ensuring GDPR compliance and keeping PII data safe</li>
-        <li>responsible for AWS infrastructure</li>
+        <li>
+          used domain-driven design concepts to help product people translate business ideas into
+          software
+        </li>
+        <li>tackled GDPR compliance and PII data protection</li>
+        <li>responsible for architecture and AWS infrastructure</li>
       </Employment>
       <Employment
         title="Software & Infrastructure Developer"
@@ -51,7 +54,7 @@ export const Employments = () => (
           created a central observability platform with Elasticsearch that helped support engineers
           to proactively detect and analyze problems
         </li>
-        <li>implemented features as microservices with AWS Lambda and NodeJS</li>
+        <li>implemented first microservices with AWS Lambda and NodeJS</li>
       </Employment>
       <Employment
         title="Team Lead & Software Architect"
