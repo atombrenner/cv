@@ -10,12 +10,12 @@
   "author": "Christian Rodemeyer",
   "license": "ISC",
   "dependencies": {
-    "execa": "^7.1.1",
+    "execa": "^8.0.1",
     "preact": "^10.15.1",
     "preact-render-to-string": "^6.1.0"
   },
   "devDependencies": {
-    "bun-types": "^0.7.0",
+    "bun-types": "^1.0.3",
     "prettier": "^3.0.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.3"

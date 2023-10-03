@@ -16,5 +16,3 @@ export const BusinessCard = () => (
     </p>
   </div>
 )
-
-export const Photo = () => <img class="object-fill" src="./photo.jpg"></img>

@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400');
 
+@page {
+  size: A4 portrait;
+  margin: 1.8cm;
+}
+
 html {
-  font-size: 18px;
+  @media screen {
+    font-size: 18px;
+  }
+  @media print {
+    font-size: 8pt;
+  }
+
+  print-color-adjust: exact; /* print background color */
 }
 
 @tailwind base;

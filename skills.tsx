@@ -2,13 +2,13 @@ import { ComponentChildren } from 'preact'
 
 export const Skills = () => (
   <>
-    <p class="mb-6">
+    <h3 class="text-2xl font-bold mb-4">Skills</h3>
+    <p class="mb-4">
       🔗
       <a href="https://github.com/atombrenner" class="underline text-blue-700  ml-1">
         github.com/atombrenner
       </a>
     </p>
-    <h3 class="text-lg font-bold mb-2">Skills</h3>
     <Skill name="Languages">
       German: native
       <br />

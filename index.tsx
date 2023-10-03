@@ -1,6 +1,6 @@
 import render from 'preact-render-to-string'
 import { writeFileSync } from 'fs'
-import { BusinessCard, Photo } from './header'
+import { BusinessCard } from './business-card'
 import { VNode } from 'preact'
 import { $ } from 'execa'
 import { Skills } from './skills'
@@ -9,13 +9,14 @@ import { Profile } from './profile'
 import { Education } from './education'
 
 const CV = () => (
-  <html>
+  <html lang="en">
     <head>
+      <meta charset="UTF-8" />
       <title>CV of Christian Rodemeyer</title>
       <link href="./main.css" rel="stylesheet"></link>
     </head>
     <body class="font-sans">
-      <div class="container mx-auto mt-10 print:mt-4 w-[1100px]">
+      <div class="container mx-auto mt-10 print:mt-0 w-[1100px]">
         <TwoColumns class="bg-[#fed78c]">
           <Photo />
           <BusinessCard />
@@ -40,10 +41,14 @@ const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNo
   </div>
 )
 
+const Photo = () => <img class="object-fill" src="./photo.jpg"></img>
+
+// --- npm start ---
+
 const tailwind = $`npx tailwindcss -i ./main.css -o ./build/main.css`
 const html = render(<CV />)
 const { stdout, stderr } = await tailwind
-writeFileSync('build/index.html', html)
+writeFileSync('build/index.html', '<!DOCTYPE html>' + html)
 
 console.log(stdout)
 console.log(stderr)
