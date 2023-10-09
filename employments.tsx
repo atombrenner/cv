@@ -11,8 +11,8 @@ export const Employments = () => (
         fromTo="2021-Present"
       >
         <li>
-          coached and developed a team of junior developers that designed and implemented several
-          B2B and B2C web apps to quickly demo and evaluate new ideas with potential customers
+          coached a team of junior developers who designed and built several B2B and B2C web apps to
+          quickly demo ideas to potential customers and shareholders
         </li>
         <li>
           used domain-driven design concepts to help product people translate business ideas into
@@ -28,12 +28,12 @@ export const Employments = () => (
         fromTo="2017-2021"
       >
         <li>
-          for re-architected article page rendering, improving developer productivity and time to
-          market while minimizing operational costs (AWS, Lambda, SSR React)
+          re-architected article page rendering, improving developer productivity and time to market
+          while minimizing operational costs (AWS, Lambda, Typescript, React)
         </li>
         <li>improved page speed and seo metrics without sacrificing tracking and advertisement</li>
         <li>
-          transformed generic dev team into a frontend focused team, responsible for the home page
+          transformed a generic dev team into a frontend focused team, responsible for the home page
           and article pages
         </li>
         <li>supported several teams with AWS, Typescript, React and NodeJS knowledge</li>

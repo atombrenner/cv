@@ -16,24 +16,23 @@ export const Skills = () => (
     </Skill>
     <Skill name="AWS Cloud Native Apps">serverless whenever possible</Skill>
     <Skill name="Domain Driven Design"></Skill>
-    <Skill name="Data Analysis">Observability, data first, metrics</Skill>
-    {/* Technologies */}
-    <Skill name="Programming Languages">
-      Typescript, Rust, C++, C#,
-      <br />
-      Scala, Kotlin, Clojure, Groovy, Ruby, Python, ...
+    <Skill name="Agile & Lean Development">Kanban, Scrum, Shape Up</Skill>
+    <Skill name="Developer Experience">
+      Continuous Delivery, Build & Deployment, Custom Tooling
     </Skill>
-    <Skill name="Runtimes">NodeJS, JVM, .NET, Browser</Skill>
-    <Skill name="Web Apps">React, NextJs, Remix, Astro, ...</Skill>
-    <Skill name="Databases">
-      DynamoDB, MySQL, PostgreSQL, Oracle, SQLServer, MongoDB, Elasticsearch, Redis
+
+    <Skill name="Programming Languages">
+      Typescript, Rust, C++, C#, Kotlin, Scala, Clojure, Groovy, Ruby, Python, ...
     </Skill>
     <Skill name="Platforms">Web, AWS, Linux, Windows</Skill>
-    <Skill name="Developer Experience" />
-    Continuous Delivery, Build & Deployment pipelines, Tooling, DevOps
+    <Skill name="Runtimes">NodeJS, Bun, JVM, .NET, Browser</Skill>
+    <Skill name="Web Apps">React, NextJs, Remix, Astro, ...</Skill>
+    <Skill name="Databases">
+      DynamoDB, Elasticsearch, Redis, MongoDB, MySQL, PostgreSQL, Oracle, SQLServer
+    </Skill>
+
     <Skill name="Fan of">
-      Gregor Hohpe, Eric Evans, Adrian&nbsp;Cockroft, Martin Fowler, Stefan&nbsp;Tilkov,
-      Bjarne&nbsp;Stroustroup, Tom DeMarco, Christian Deger
+      Stefan Tilkov, Gregor Hohpe, Eric Evans, Martin Fowler, Bjarne Stroustroup, Tom DeMarco
     </Skill>
   </>
 )
@@ -45,7 +44,19 @@ type SkillProps = {
 
 const Skill = ({ name, children }: SkillProps) => (
   <>
-    <h4 class="font-bold mt-4 mb-1">{name}</h4>
-    <p>{children}</p>
+    <h4 class="font-bold mt-4 mb-1 ">{name}</h4>
+    <p class="last-child:bg-gray-400">{whitespaceNoWrap(children)}</p>
   </>
 )
+
+const whitespaceNoWrap = (children: ComponentChildren) => {
+  if (typeof children === 'string')
+    return children.split(',').map((child) => (
+      <>
+        <span class="whitespace-nowrap">{child.trim()}</span>
+        <span class="last:hidden">, </span>
+      </>
+    ))
+
+  return Array.isArray(children) ? children.map(whitespaceNoWrap) : children
+}
