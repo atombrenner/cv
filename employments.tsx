@@ -18,8 +18,8 @@ export const Employments = () => (
           used domain-driven design concepts to help product people translate business ideas into
           software
         </li>
-        <li>tackled GDPR compliance and PII data protection</li>
-        <li>responsible for architecture and AWS infrastructure</li>
+        <li>tackled GDPR compliance and PII data protection to reduce risks for shareholders</li>
+        <li>reducing and monitoring of AWS infrastructure costs</li>
       </Employment>
       <Employment
         title="Software & Infrastructure Developer"
@@ -33,11 +33,14 @@ export const Employments = () => (
         </li>
         <li>improved page speed and seo metrics without sacrificing tracking and advertisement</li>
         <li>
-          transformed a generic dev team into a frontend focused team, responsible for the home page
-          and article pages
+          transformed a generic dev team into a frontend team that could focus on improving customer
+          experience on home page and article pages
         </li>
         <li>supported several teams with AWS, Typescript, React and NodeJS knowledge</li>
-        <li>used tracking data to generate article recommendations</li>
+        <li>
+          used tracking data to generate article recommendations that increased page views (and ad
+          revenue)
+        </li>
         <li>
           replaced legacy custom image storage with standard AWS S3 and Cloudfront increasing
           availability and reducing costs by orders of magnitude

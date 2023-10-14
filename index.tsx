@@ -8,12 +8,16 @@ import { Employments } from './employments'
 import { Profile } from './profile'
 import { Education } from './education'
 
-const CV = () => (
+type CVProps = {
+  style: string
+}
+
+const CV = ({ style }: CVProps) => (
   <html lang="en">
     <head>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <title>CV of Christian Rodemeyer</title>
-      <link href="./main.css" rel="stylesheet"></link>
+      <style>{style}</style>
     </head>
     <body class="font-sans">
       <div class="container mx-auto mt-10 print:mt-0 w-[1100px]">
@@ -43,12 +47,11 @@ const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNo
 
 const Photo = () => <img class="object-fill" src="./photo.jpg"></img>
 
-// --- npm start ---
+// --- start ---
 
-const tailwind = $`npx tailwindcss -i ./main.css -o ./build/main.css`
-const html = render(<CV />)
+const tailwind = $`bunx tailwindcss -m -i ./main.css`
 const { stdout, stderr } = await tailwind
-writeFileSync('build/index.html', '<!DOCTYPE html>' + html)
-
-console.log(stdout)
 console.log(stderr)
+
+const html = render(<CV style={stdout} />)
+writeFileSync('build/index.html', '<!DOCTYPE html>' + html)
