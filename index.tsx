@@ -17,7 +17,7 @@ const CV = ({ style }: CVProps) => (
     <head>
       <meta charSet="UTF-8" />
       <title>CV of Christian Rodemeyer</title>
-      <style>{style}</style>
+      <style dangerouslySetInnerHTML={{ __html: style }} />
     </head>
     <body class="font-sans">
       <div class="container mx-auto mt-10 print:mt-0 w-[1100px]">
@@ -45,7 +45,7 @@ const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNo
   </div>
 )
 
-const Photo = () => <img class="object-fill" src="./photo.jpg"></img>
+const Photo = () => <img width="293" class="object-fill" src="./photo.jpg"></img>
 
 // --- start ---
 
@@ -54,4 +54,4 @@ const { stdout, stderr } = await tailwind
 console.log(stderr)
 
 const html = render(<CV style={stdout} />)
-writeFileSync('build/index.html', '<!DOCTYPE html>' + html)
+writeFileSync('build/cv.html', '<!DOCTYPE html>' + html)
