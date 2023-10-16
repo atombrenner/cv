@@ -9,7 +9,7 @@ export const BusinessCard = () => (
         +4{3 * 3} 151 {35178984 + 35000000}
       </a>
     </p>
-    <p class="mb-4">
+    <p class="mb-2">
       <a href="mailto:atombrenner@gmail.com" class="hover:underline">
         atombrenner@gmail.com
       </a>

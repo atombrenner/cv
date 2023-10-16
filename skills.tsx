@@ -5,7 +5,7 @@ export const Skills = () => (
     <h3 class="text-2xl font-bold mb-4">Skills</h3>
     <p class="mb-4">
       🔗
-      <a href="https://github.com/atombrenner" class="underline text-blue-700  ml-1">
+      <a href="https://github.com/atombrenner" class="hover:underline text-blue-700 ml-1">
         github.com/atombrenner
       </a>
     </p>
@@ -14,7 +14,7 @@ export const Skills = () => (
       <br />
       English: fluent
     </Skill>
-    <Skill name="AWS Cloud Native Apps">serverless whenever possible</Skill>
+    <Skill name="AWS Cloud Native Apps">serverless whenever it makes sense</Skill>
     <Skill name="Domain Driven Design"></Skill>
     <Skill name="Agile & Lean Development">Kanban, Scrum, Shape Up</Skill>
     <Skill name="Developer Experience">
@@ -27,6 +27,7 @@ export const Skills = () => (
     <Skill name="Platforms">Web, AWS, Linux, Windows</Skill>
     <Skill name="Runtimes">NodeJS, Bun, JVM, .NET, Browser</Skill>
     <Skill name="Web Apps">React, NextJs, Remix, Astro, ...</Skill>
+    <Skill name="Frameworks">Play, Spring, ASP.NET MVC, MFC</Skill>
     <Skill name="Databases">
       DynamoDB, Elasticsearch, Redis, MongoDB, MySQL, PostgreSQL, Oracle, SQLServer
     </Skill>

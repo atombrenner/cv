@@ -45,7 +45,7 @@ const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNo
   </div>
 )
 
-const Photo = () => <img width="293" class="object-fill" src="./photo.jpg"></img>
+const Photo = () => <img class="object-fill" src="./photo.jpg"></img>
 
 // --- start ---
 

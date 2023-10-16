@@ -11,15 +11,17 @@ export const Employments = () => (
         fromTo="2021-Present"
       >
         <li>
-          coached a team of junior developers who designed and built several B2B and B2C web apps to
-          quickly demo ideas to potential customers and shareholders
+          coached and mentored a team of junior developers who built several B2B and B2C web apps to
+          demo product ideas to customers and shareholders
         </li>
         <li>
           used domain-driven design concepts to help product people translate business ideas into
           software
         </li>
         <li>tackled GDPR compliance and PII data protection to reduce risks for shareholders</li>
-        <li>reducing and monitoring of AWS infrastructure costs</li>
+        <li>
+          architected and implemented cost effective and secure backends with AWS infrastructure
+        </li>
       </Employment>
       <Employment
         title="Software & Infrastructure Developer"
@@ -42,16 +44,29 @@ export const Employments = () => (
           revenue)
         </li>
         <li>
-          replaced legacy custom image storage with standard AWS S3 and Cloudfront increasing
-          availability and reducing costs by orders of magnitude
+          negotiated agreement to outsource image delivery to
+          <a class="hover:underline text-blue-700 ml-1" href="https://imgix.com/">
+            imgix
+          </a>{' '}
+          with legal department
         </li>
-        <li>switched website (including dozens of legacy services) from http to https</li>
+        <li>
+          replaced legacy custom image storage with AWS S3 and Cloudfront increasing availability
+          and reducing costs by orders of magnitude
+        </li>
+        <li>
+          modernized main website
+          <a class="hover:underline text-blue-700 ml-1" href="https://www.sueddeutsche.de/">
+            sz.de
+          </a>{' '}
+          and related services to current web standards, especially https
+        </li>
       </Employment>
       <Employment title="Cloud Developer" company="tado° GmbH" location="Munich" fromTo="2016-2017">
         <li>automated AWS infrastructure with CloudFormation and Ruby</li>
         <li>
           implemented DevOps principles, enabling dev teams to deploy and operate applications in
-          production, eliminating the need for dedicated engineers
+          production, eliminating the need for dedicated ops engineers
         </li>
         <li>
           created a central observability platform with Elasticsearch that helped support engineers
