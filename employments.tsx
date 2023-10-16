@@ -35,8 +35,8 @@ export const Employments = () => (
         </li>
         <li>improved page speed and seo metrics without sacrificing tracking and advertisement</li>
         <li>
-          transformed a generic dev team into a frontend team that could focus on improving customer
-          experience on home page and article pages
+          transformed a generic dev team into a product team focussing on improving customer
+          experience for home page and article pages
         </li>
         <li>supported several teams with AWS, Typescript, React and NodeJS knowledge</li>
         <li>
@@ -81,28 +81,25 @@ export const Employments = () => (
         fromTo="2010-2015"
       >
         <li>
-          initiated the transition from the .NET/Windows monolith to a microservice architecture
-          running on Linux, hosted in AWS Cloud
+          started the transition from the .NET/Windows monolith to a microservice architecture
+          running on Linux and hosted in the AWS Cloud
         </li>
-        <li>
-          visualized VMware usage to identify and terminate hundreds of unused instances to reduce
-          costs
-        </li>
+        <li>reduced costs by identifying and terminating hundreds of unused VMware instances</li>
         <li>
           pushed Continuous Delivery practices to deploy code changes automatically, reducing time
           to fix from weeks to hours and making hotfix release process obsolete
         </li>
+        <li>enabled zero downtime code only deployments</li>
         <li>implemented build and deploy pipelines that run in minutes instead of hours</li>
         <li>
           implemented a custom frontend build pipeline (minifier, bundler and strong caching/CDN)
           for better pagespeed and cost reduction
         </li>
-        <li>enabled zero downtime code only deployments</li>
-        <li>migrated the monolithic .NET platform from .NET2 to .NET4</li>
         <li>
           made production logs performant and accessible for developers to quickly detect and fix
           problems
         </li>
+        <li>migrated the monolithic .NET platform from .NET2 to .NET4</li>
       </Employment>
       <Employment
         title="Software Architect"
