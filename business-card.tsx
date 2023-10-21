@@ -1,6 +1,6 @@
 export const BusinessCard = () => (
   <div>
-    <h1 class="font-semibold text-5xl mt-8">Christian Rodemeyer</h1>
+    <h1 class="font-medium text-5xl mt-8">Christian Rodemeyer</h1>
     <p class="mt-1 mb-2">Diplom Wirtschaftsinformatiker</p>
     <h2 class="text-2xl">Software Engineer | Tech Lead | Architect</h2>
     <p class="mt-6">Angerweg 26, 85579 Neubiberg</p>

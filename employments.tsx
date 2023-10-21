@@ -2,7 +2,7 @@ import { ComponentChildren } from 'preact'
 
 export const Employments = () => (
   <>
-    <h2 class="text-2xl font-bold mt-10 mb-4">Employment History</h2>
+    <h2 class="text-2xl font-medium mt-10 mb-4">Employment History</h2>
     <ul>
       <Employment
         title="Lead Developer"
@@ -172,7 +172,7 @@ type EmploymentProps = {
 
 const Employment = ({ title, company, location, fromTo, children }: EmploymentProps) => (
   <li class="break-inside-avoid">
-    <h3 class="text-lg font-bold mt-4">
+    <h3 class="text-lg font-medium mt-4">
       {title}, {company}
     </h3>
     <p class="mb-2">

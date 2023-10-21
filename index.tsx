@@ -19,7 +19,7 @@ const CV = ({ style }: CVProps) => (
       <title>CV of Christian Rodemeyer</title>
       <style dangerouslySetInnerHTML={{ __html: style }} />
     </head>
-    <body class="font-sans">
+    <body class="font-sans font-light">
       <div class="container mx-auto mt-10 print:mt-0 w-[1100px]">
         <TwoColumns class="bg-[#fed78c]">
           <Photo />
