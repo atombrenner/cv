@@ -15,7 +15,7 @@ export const Skills = () => (
       English: fluent
     </Skill>
     <Skill name="AWS Cloud Native Apps">serverless whenever it makes sense</Skill>
-    <Skill name="Domain Driven Design"></Skill>
+    <Skill name="Domain-Driven Design"></Skill>
     <Skill name="Agile & Lean Development">Kanban, Scrum, Shape Up</Skill>
     <Skill name="Developer Experience">
       Continuous Delivery, Build & Deployment, Custom Tooling

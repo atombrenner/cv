@@ -33,22 +33,25 @@ export const Employments = () => (
           re-architected article page rendering, improving developer productivity and time to market
           while minimizing operational costs (AWS, Lambda, Typescript, React)
         </li>
-        <li>improved page speed and seo metrics without sacrificing tracking and advertisement</li>
         <li>
-          transformed a generic dev team into a product team focussing on improving customer
-          experience for home page and article pages
+          improved page speed and seo metrics without sacrificing tracking and advertisement
+          requirements
+        </li>
+        <li>
+          transformed a generalist dev team into specialists for improving customer value on the
+          home page and article pages
         </li>
         <li>supported several teams with AWS, Typescript, React and NodeJS knowledge</li>
         <li>
-          used tracking data to generate article recommendations that increased page views (and ad
-          revenue)
+          colaborated with the data science team to generate article recommendations that increased
+          page views and therefore advertisement revenue
         </li>
         <li>
-          negotiated agreement to outsource image delivery to
+          negotiated an agreement with the legal department to outsource image delivery to
           <a class="hover:underline text-blue-700 ml-1" href="https://imgix.com/">
             imgix
-          </a>{' '}
-          with legal department
+          </a>
+          , freeing up developer capacity to focus on crucial business value
         </li>
         <li>
           replaced legacy custom image storage with AWS S3 and Cloudfront increasing availability
@@ -86,6 +89,9 @@ export const Employments = () => (
         </li>
         <li>reduced costs by identifying and terminating hundreds of unused VMware instances</li>
         <li>
+          helped modernizing identity management and SSO with an OpenID Connect identity provider
+        </li>
+        <li>
           pushed Continuous Delivery practices to deploy code changes automatically, reducing time
           to fix from weeks to hours and making hotfix release process obsolete
         </li>
@@ -107,12 +113,12 @@ export const Employments = () => (
         location="Munich"
         fromTo="2007-2010"
       >
-        <li>created continuous integration infrastructure for all .NET/C#/C++ products</li>
-        <li>introduced and coached agile principles and practices</li>
         <li>
-          created a service oriented architecture to implement a Media Asset Workflow Management
-          product in a team
+          developed a service oriented architecture for Media Asset Workflow Management products
         </li>
+        <li>integrated products with Microsoft Sharepoint</li>
+        <li>continuous integration infrastructure for all .NET/C#/C++ products</li>
+        <li>introduced and coached agile principles and practices</li>
       </Employment>
       <Employment
         title="Software Developer"
