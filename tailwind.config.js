@@ -3,7 +3,7 @@ module.exports = {
   content: ['**/*.tsx'],
   theme: {
     fontFamily: {
-      sans: ['Lexend', 'sans-serif'],
+      sans: ['Lexend'],
     },
     extend: {},
   },

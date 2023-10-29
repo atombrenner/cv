@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bun --watch index.tsx"
+    "start": "bun --watch index.tsx",
+    "build": "bun index.tsx"
   },
   "author": "Christian Rodemeyer",
   "license": "ISC",
