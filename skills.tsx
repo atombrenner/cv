@@ -20,7 +20,7 @@ export const Skills = () => (
     <Skill name="Developer Experience">
       Continuous Delivery, Build & Deployment, Custom Tooling
     </Skill>
-
+    <Skill name="Container">Podman, Kubernetes, Docker</Skill>
     <Skill name="Programming Languages">
       Typescript, Rust, C++, C#, Kotlin, Scala, Clojure, Groovy, Ruby, Python, ...
     </Skill>
