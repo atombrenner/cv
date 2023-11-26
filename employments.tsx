@@ -19,9 +19,7 @@ export const Employments = () => (
           software
         </li>
         <li>tackled GDPR compliance and PII data protection to reduce risks for shareholders</li>
-        <li>
-          architected and implemented cost effective and secure backends with AWS infrastructure
-        </li>
+        <li>architected and implemented secure backends running on AWS</li>
       </Employment>
       <Employment
         title="Software & Infrastructure Developer"

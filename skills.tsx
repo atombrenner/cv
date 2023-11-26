@@ -2,7 +2,9 @@ import { ComponentChildren } from 'preact'
 
 export const Skills = () => (
   <>
-    <h3 class="text-2xl font-medium mb-4">Skills</h3>
+    <h3 className="" class="text-2xl font-medium mb-4">
+      Skills
+    </h3>
     <p class="mb-4">
       🔗
       <a href="https://github.com/atombrenner" class="hover:underline text-blue-700 ml-1">
@@ -31,9 +33,8 @@ export const Skills = () => (
     <Skill name="Databases">
       DynamoDB, Elasticsearch, Redis, MongoDB, MySQL, PostgreSQL, Oracle, SQLServer
     </Skill>
-
     <Skill name="Fan of">
-      Stefan Tilkov, Gregor Hohpe, Eric Evans, Martin Fowler, Bjarne Stroustroup, Tom DeMarco
+      Stefan Tilkov, Gregor Hohpe, Eric Evans, Martin Fowler, Tom DeMarco, Bjarne Stroustroup
     </Skill>
   </>
 )
