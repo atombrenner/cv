@@ -73,7 +73,7 @@ export const Employments = () => (
           created a central observability platform with Elasticsearch that helped support engineers
           to proactively detect and analyze problems
         </li>
-        <li>implemented first microservices with AWS Lambda and NodeJS</li>
+        <li>implemented microservices with AWS Lambda Functions and NodeJS</li>
       </Employment>
       <Employment
         title="Team Lead & Software Architect"
