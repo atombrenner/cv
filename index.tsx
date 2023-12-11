@@ -19,8 +19,8 @@ const CV = ({ style }: CVProps) => (
       <title>CV of Christian Rodemeyer</title>
       <style dangerouslySetInnerHTML={{ __html: style }} />
     </head>
-    <body class="font-sans font-light">
-      <div class="container mx-auto mt-10 print:mt-0 w-[1100px]">
+    <body class="font-sans font-normal bg-yellow-50 print:bg-white">
+      <div class="mx-auto mt-10 print:mt-0 max-w-5xl">
         <TwoColumns class="bg-[#fed78c]">
           <Photo />
           <BusinessCard />
@@ -40,12 +40,12 @@ const CV = ({ style }: CVProps) => (
 
 const TwoColumns = ({ class: extra, children }: { class?: string; children: [VNode, VNode] }) => (
   <div class={`flex items-start ${extra ?? ''}`}>
-    <div class="w-1/3 pr-16">{children[0]}</div>
+    <div class="w-1/3 pr-14">{children[0]}</div>
     <div class="w-2/3">{children[1]}</div>
   </div>
 )
 
-const Photo = () => <img class="object-fill" src="./photo.jpg"></img>
+const Photo = () => <img class="max-h-[300px]" src="./photo.jpg"></img>
 
 // --- start ---
 
