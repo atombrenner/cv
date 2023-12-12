@@ -14,7 +14,9 @@ export const Skills = () => (
       <br />
       English: fluent
     </Skill>
+
     <h3 class="text-2xl font-medium mb-4 mt-8">Top Skills</h3>
+
     <Skill
       name="Cloud Native Architecture"
       active={4}
@@ -27,21 +29,23 @@ export const Skills = () => (
       passive={6}
       examples="Continuous Delivery, IaC, Observability, Alerting"
     />
-    <Skill name="Agile & Lean Development" active={6} examples="Scrum, Kanban, Shape Up" />
-    <Skill name="Domain-Driven Design" active={3} passive={4} />
-    <Skill
-      name="Programming Languages"
-      active={5}
-      passive={6}
-      examples="Typescript, Kotlin, C#, C++"
-    />
     <Skill
       name="Containerization"
       active={3}
       passive={5}
       examples="Docker, Kubernetes (EKS), Podman"
     />
+    <Skill
+      name="Programming Languages"
+      active={5}
+      passive={6}
+      examples="Typescript, Kotlin, C#, C++"
+    />
+    <Skill name="Domain-Driven Design" active={3} passive={4} />
+    <Skill name="Agile & Lean Development" active={6} examples="Scrum, Kanban, Shape Up" />
+
     <h3 class="text-2xl font-medium mb-4 mt-10 ">More Skills</h3>
+
     <Skill
       name="Infrastructure as Code"
       active={3}
@@ -72,6 +76,7 @@ export const Skills = () => (
       examples="MySQL, PostgreSQL, Oracle, SQLServer"
     />
     <Skill name="Frameworks" active={2} passive={5} examples="Spring, ASP.NET MVC, Play, Koa" />
+    <Skill name="TDD" active={3} passive={5} examples="Jest, JUnit, NUnit" />
     <Skill name="Data Science" active={2} passive={3} examples="Visualization, Statistics" />
     <Skill name="Authentication" active={2} passive={4} examples="OpenID Connect, Cognito" />
     <Skill name="More Programming Languages" active={1} passive={4}>
