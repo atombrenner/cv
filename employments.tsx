@@ -182,9 +182,7 @@ export const Employments = () => (
       location="Hamminkeln"
       fromTo="1995-1996"
     >
-      <li>
-        implemented a control station for production planning (BoM, sequence, capacity), Windows/C++
-      </li>
+      <li>implemented a control station for production planning (BoM, sequence, capacity)</li>
       <li>introduced version control, C++ and SQL</li>
     </Employment>
   </>
